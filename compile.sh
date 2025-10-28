@@ -12,5 +12,5 @@ fi
 
 FILE=$1
 
-# Run LuaLaTeX in container
+# Run pdflatex in container
 podman run --rm -v "$(pwd):/workspace:z" -w /workspace registry.gitlab.com/islandoftex/images/texlive:latest pdflatex "$FILE"
