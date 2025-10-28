@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{todonotes}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\setlength{\footskip}{4.08003pt}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\huge \scshape Daniel Dong} \\ \vspace{4pt}
+    \small (248) 345-8918 $|$ \href{mailto:dandongyz@gmail.com}{\underline{dandongyz@gmail.com}} $|$
+    Chicago, Illinois $|$
+    \href{https://www.linkedin.com/in/dandongyz/}{\underline{https://www.linkedin.com/in/dandongyz/}} 
+\end{center}
+%-----------EXPERIENCE-----------
+
+\section{Work Experience}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Software Developer} $|$ \emph{Samaritan Ministries International} $|$ {Peoria, Illinois}}{July 2024 - Present}
+        \resumeItemListStart
+            \resumeItem{Engineered a \textbf{recursive C\# algorithm} distributing \textbf{\$2M/month} across a \$20M+/year bill-sharing program, preventing billing spikes and reducing 300+ support calls monthly}
+            \resumeItem{Built an \textbf{automated Bill-Sharing service} processing \textbf{\$200K/month} and 1,000+ bills per run, eliminating 50+ hours of monthly work for Processors}
+            \resumeItem{Delivered production updates and features to a large-scale \textbf{React} application serving 250K+ members for bill management, share tracking, and real-time in-app messaging}
+        \resumeItemListEnd 
+          
+    \resumeProjectHeading
+        {\textbf{Web Developer} $|$ \emph{CGCW} $|$ {Novi, MI}}{January 2024 - April 2024}
+        \resumeItemListStart
+            \resumeItem{Developed member registration tools using \textbf{C\#} within an \textbf{ASP.NET MVC} architecture}
+            \resumeItem{Designed a normalized SQL schema and integrated it with a Data Access Layer using \textbf{Entity Framework} and \textbf{Repository Patterns} for scalable, type-safe database operations}
+            \resumeItem{Integrated a \textbf{Vue.js} frontend with backend \textbf{RESTful APIs}, enabling real-time form validation and improving registration usability}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Software Engineer Intern} $|$ \emph{Suitcase} $|$ {Ann Arbor, MI}}{May 2023 - August 2023}
+        \resumeItemListStart
+            \resumeItem{Architected the full-stack solution for Suitcase, a banquet room visualization tool, enabling dynamic 3D asset management and real-time user interactions}
+            \resumeItem{Developed \textbf{Django backend APIs} to serve the Unity frontend, managing user, vendor, and product data efficiently}
+            \resumeSubItem{Optimized a \textbf{PostgreSQL} database and asset delivery via \textbf{AWS S3/CloudFront}, achieving 60\% faster room loading times for 5000+ 3D models}
+        \resumeItemListEnd
+
+          
+    \resumeProjectHeading
+        {\textbf{Software Engineer Intern} $|$ \emph{Altair Engineering} $|$ {Irvine, California}}{May 2022 - August 2022}
+          \resumeItemListStart
+            \resumeItem{Cleaned up thousands of Fortran77 and Fortran90 files by developing automated Python scripts to reduce errors, enhance codebase cleanliness, and increase development efficiency}
+            \resumeItem{Streamlined complex Fortran declarations/subroutines, replaced deprecated functions, and removed unused variables with scripts, earning recognition from the HyperWorks Core Development team}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHINCAL SKILLS-----------
+\section{Technical Skills} 
+        \textbf{Languages:} \small C\#, Python, Java, C++,  JavaScript, TypeScript, SQL, HTML/CSS,  Kotlin
+        \newline
+        \textbf{Frameworks:} \small .NET Core, Entity Framework, Django, React, Vue.js,  Node.js
+        \newline
+        \textbf{Tools/Platforms:} \small Git, AWS (EC2, S3, RDS, CloudFront), PostgreSQL, Supabase, SQLite, Linux, Visual Studio
+
+% %-----------.NET TECHINCAL SKILLS-----------
+% \section{Technical Skills} 
+%         \textbf{Languages:} \small C\#, TypeScript, JavaScript, SQL, Python, Java, C++, HTML/CSS, Kotlin
+%         \newline
+%         \textbf{Frameworks:} \small .NET Core, Entity Framework, Django, React, Vue.js,  Node.js
+%         \newline
+%         \textbf{Tools/Platforms:} \small Git, AWS (EC2, S3, RDS, CloudFront), Azure, PostgreSQL, SQLite, Linux, Visual Studio
+
+
+%-----------PROJECTS-----------
+\section{Relevant Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{RANKED – Offline-First Ranking App} $|$ \emph{React Native, TypeScript}}{}
+        \resumeItemListStart
+                \resumeItem{Built a cross-platform mobile app for creating and managing custom rankings using \textbf{React Native}, with \textbf{Supabase} for authentication and cloud synchronization}
+                \resumeItem{Implemented an \textbf{offline-first architecture} with local \textbf{SQLite} storage as the primary data source and background sync for remote updates and conflict resolution}
+                \resumeItem{Ensured data consistency through \textbf{transaction-safe operations}, rank offset handling, and optimistic updates with automatic rollback on failure}
+        
+        \resumeItemListEnd
+        \resumeProjectHeading
+              {\textbf{Multi-Threaded Network Fileserver} $|$ \emph{C++}}{}
+              \resumeItemListStart
+                \resumeItem{Engineered a network file server with socket programming for efficient client-server communication with  multiple clients}
+                \resumeItem{Implemented multi-threading to manage concurrent client requests with thread synchronization for high server responsiveness and effective resource allocation}
+                \resumeItem{Developed read, write, create, \& delete file system functionalities with crash consistent protocols to ensure data integrity}
+        \resumeItemListEnd
+        
+        % \resumeProjectHeading
+        %       {\textbf{Reminisce - Travel Scrapbook App} $|$ \emph{Kotlin \& Python}}{}
+        %       \resumeItemListStart
+        %         \resumeItem{Developed a \textbf{Django}-based backend with \textbf{RESTful APIs}, integrating Google Maps, Spotify, and Weather APIs for improved user engagement with real-time route and weather trackers and music preferences}
+        %         \resumeItem{Optimized data exchange between a \textbf{Kotlin}-based \textbf{mobile application} and its backend by refining JSON structures and API endpoints, enhancing data retrieval speeds and enabling real-time updates for 100+ data points per user}
+        % \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan - Ann Arbor}{April 2024}
+      {B.S. in Computer Science and Cognitive Science}{}\vspace{10pt}
+        \newline
+        \small \textbf{Relevant Coursework:} \small Data Structures and Algorithms, Web Systems, Operating Systems, Database Management Systems, Machine Learning, Mobile App Development, Computer Vision
+  \resumeSubHeadingListEnd
+
+          \rule{\linewidth}{0.3pt}
+
+
+    \footnotesize
+    \textbf{Interests:} Sports (Basketball, Tennis, Volleyball, NBA), Music (Vocals, Guitar, Drums, Songwriting), Cooking, Baking
+    \newline
+    \textbf{Fluent Languages:} English, Mandarin, French
+%-------------------------------------------
+\end{document}
+
