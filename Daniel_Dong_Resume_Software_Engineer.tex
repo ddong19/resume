@@ -126,13 +126,13 @@
             \resumeItem{Delivered production updates and features to a large-scale \textbf{React} application serving 250K+ members for bill management, share tracking, and real-time in-app messaging}
         \resumeItemListEnd 
           
-    \resumeProjectHeading
-        {\textbf{Web Developer} $|$ \emph{CGCW} $|$ {Novi, MI}}{January 2024 - April 2024}
-        \resumeItemListStart
-            \resumeItem{Built member registration tools in \textbf{C\#} and \textbf{ASP.NET MVC}, emphasizing \textbf{SOLID principles} and separation of concerns to ensure clean, extensible architecture}
-            \resumeItem{Designed a normalized SQL schema and integrated it with a Data Access Layer using \textbf{Entity Framework} and \textbf{Repository Patterns} for scalable, type-safe database operations}
-            \resumeItem{Integrated a \textbf{Vue.js} frontend with backend \textbf{RESTful APIs}, enabling real-time form validation and improving registration usability}
-        \resumeItemListEnd
+    % \resumeProjectHeading
+    %     {\textbf{Web Developer} $|$ \emph{CGCW} $|$ {Novi, MI}}{January 2024 - April 2024}
+    %     \resumeItemListStart
+    %         \resumeItem{Built member registration tools in \textbf{C\#} and \textbf{ASP.NET MVC}, emphasizing \textbf{SOLID principles} and separation of concerns to ensure clean, extensible architecture}
+    %         \resumeItem{Designed a normalized SQL schema and integrated it with a Data Access Layer using \textbf{Entity Framework} and \textbf{Repository Patterns} for scalable, type-safe database operations}
+    %         \resumeItem{Integrated a \textbf{Vue.js} frontend with backend \textbf{RESTful APIs}, enabling real-time form validation and improving registration usability}
+    %     \resumeItemListEnd
 
     \resumeProjectHeading
         {\textbf{Software Engineer Intern} $|$ \emph{Suitcase} $|$ {Ann Arbor, MI}}{May 2023 - August 2023}
@@ -160,7 +160,7 @@
 
 %-----------.NET TECHINCAL SKILLS-----------
 \section{Technical Skills} 
-        \textbf{Languages:} \small C\#, JavaScript, SQL, HTML/CSS, Python, Java, TypeScript, C++, Kotlin
+        \textbf{Languages:} \small C\#, C++, Python, JavaScript, SQL, HTML/CSS, Java, TypeScript, Kotlin
         \newline
         \textbf{Frameworks:} \small .NET Core, Entity Framework, Django, React, Vue.js,  Node.js
         \newline
@@ -170,14 +170,7 @@
 %-----------PROJECTS-----------
 \section{Relevant Projects}
     \resumeSubHeadingListStart
-        \resumeProjectHeading
-        {\textbf{RANKED – Offline-First Ranking App} $|$ \emph{React Native, TypeScript}}{}
-        \resumeItemListStart
-                \resumeItem{Built a cross-platform mobile app for creating and managing custom rankings using \textbf{React Native}, with \textbf{Supabase} for authentication and cloud synchronization}
-                \resumeItem{Implemented an \textbf{offline-first architecture} with local \textbf{SQLite} storage as the primary data source and background sync for remote updates and conflict resolution}
-                \resumeItem{Ensured data consistency through \textbf{transaction-safe operations}, rank offset handling, and optimistic updates with automatic rollback on failure}
-        
-        \resumeItemListEnd
+
         \resumeProjectHeading
               {\textbf{Multi-Threaded Network Fileserver} $|$ \emph{C++}}{}
               \resumeItemListStart
@@ -185,7 +178,23 @@
                 \resumeItem{Implemented multi-threading to manage concurrent client requests with thread synchronization for high server responsiveness and effective resource allocation}
                 \resumeItem{Developed read, write, create, \& delete file system functionalities with crash consistent protocols to ensure data integrity}
         \resumeItemListEnd
-        
+
+        \resumeProjectHeading
+        {\textbf{Pager for Virtual Memory Management} $|$ \emph{C++}}{}
+        \resumeItemListStart
+          \resumeItem{Designed an external pager for virtual memory management in application processes, handling read/write faults}
+          \resumeItem{Created a page fault handling system, employing C++ smart pointers to manage page table entries}
+          \resumeItem{Executed thread-safe synchronization in a multi-process environment with mutex, lock\_guard, \& shared\_lock for deadlock prevention and RAII-based resource control}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{RANKED – Offline-First Ranking App} $|$ \emph{React Native, TypeScript}}{}
+        \resumeItemListStart
+                \resumeItem{Built a cross-platform mobile app for creating and managing custom rankings using \textbf{React Native}, with \textbf{Supabase} for authentication and cloud synchronization}
+                \resumeItem{Implemented an \textbf{offline-first architecture} with local \textbf{SQLite} storage as the primary data source and background sync for remote updates and conflict resolution}
+                \resumeItem{Ensured data consistency through \textbf{transaction-safe operations}, rank offset handling, and optimistic updates with automatic rollback on failure}
+        \resumeItemListEnd
+
         % \resumeProjectHeading
         %       {\textbf{Reminisce - Travel Scrapbook App} $|$ \emph{Kotlin \& Python}}{}
         %       \resumeItemListStart
